@@ -1,0 +1,46 @@
+<!-- Using index.ejs file to compose html file via ejs engine  -->
+<%- include ../partials/header.ejs %>
+
+<!-- Main Nav bar -->
+<%- include ../partials/main_nav.ejs %>
+
+
+
+
+<!--  MAIN CONTENT -->
+
+<main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-9">
+            <h1><%= title %></h1>
+            
+            <a href="/contact-list/add" class="btn btn-primary" role="button">
+            <i class="fas fa-plus-circle"></i> Add a Survey Name</a>
+            <br>
+            <table class="table table-bordered table-striped table-hover">
+                <!-- Header Row-->
+                <tr class="d-flex">
+                    <th class="text-center col-2">Survey Name</th>
+                   
+                    <th class="text-center col-2"></th>
+                    <th class="text-center col-2"></th>
+               
+                </tr>
+
+                          
+            </table>
+        </div>
+    </div>
+</main>
+ 
+<!-- Javascript Section -->
+<%- include ../partials/bottom_nav.ejs %>
+
+
+<%- include ../partials/footer.ejs %>
+
+
+
+
+
+

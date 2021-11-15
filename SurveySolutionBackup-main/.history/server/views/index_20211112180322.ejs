@@ -1,0 +1,23 @@
+<!-- Using index.ejs file to compose html file via ejs engine  -->
+<%- include partials/header.ejs%>
+
+<!-- Main Nav bar -->
+<%- include partials/main_nav.ejs %>
+
+
+
+
+<!--  MAIN CONTENT -->
+<main class="container">
+<div class="jumbotron">
+<%- include('content/' + page + '.ejs'); %>
+</div>
+
+</main>
+ 
+
+
+
+
+
+
